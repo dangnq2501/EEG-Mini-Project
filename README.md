@@ -42,11 +42,11 @@ Two variations are explored:
 ## Results
 The best hyperparameters and test accuracies for each model are summarized below:
 
-| Model              | Variation           | Learning Rate | Dropout Rate | Test Accuracy |
-|--------------------|---------------------|---------------|--------------|---------------|
-| EEGNet             | N/A                 | 0.001         | 0.3          | 70.0%         |
-| Multi-Branch CNN   | Frequency-Domain    | 0.0005        | 0.4          | 73.5%         |
-| Multi-Branch CNN   | Spatial-Temporal    | 0.0005        | 0.4          | 75.0%         |
+
+| Model                        | Hidden Dim | Learning Rate | Dropout Rate | Test Accuracy |
+|-----------------------------|------------|---------------|--------------|---------------|
+| EEGNetWithAutoencoder       | 256        | 0.0006        | 0.5          | 54.28%        |
+| MultiBranchWithAutoencoder  | 160        | 0.0001        | 0.3          | 34.28%        |
 
 ## Future Work
 The next phase of this project involves integrating the feature extraction capabilities of EEGNet and autoencoders with Graph Neural Networks (GNNs). GNNs offer the following advantages:
